@@ -1,10 +1,4 @@
-class BinaryTree():
-    def __init__(self, val = None, right = None, left = None, parent = None):
-        self.val = val
-        self.right = right
-        self.left = left
-        self.parent = parent
-
+from BinaryTree import BinaryTree
 
 t = BinaryTree(val = 1)
 t.left = BinaryTree(val = 2, parent = t)

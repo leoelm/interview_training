@@ -1,15 +1,4 @@
-class ListNode:
-    def __init__(self, data=0, next_node = None):
-        self.data = data
-        self.next = next_node
-
-def printList(l):
-    while l:
-        if not l.next:
-            print(l.data)  
-            break   
-        print(l.data, '--> ', end='')
-        l = l.next
+from ListNode import ListNode, printList
 
 l1 = ListNode(1)
 l1.next = ListNode(2)

@@ -1,19 +1,14 @@
-class BinaryNode():
-    def __init__(self, value=None, left=None, right=None):
-        self.value = value
-        self.left = left
-        self.right = right
+from BinaryTree import BinaryTree
 
-tree = BinaryNode(10)
-tree.left = BinaryNode(5)
-tree.right = BinaryNode(8)
-tree.left.left = BinaryNode(3)
-tree.left.right = BinaryNode(6)
-tree.left.right.left = BinaryNode(7)
-tree.left.right.right = BinaryNode(9)
-# tree.right = BinaryNode(15)
-tree.right.left = BinaryNode(13)
-tree.right.right = BinaryNode(17)
+tree = BinaryTree(val=10)
+tree.left = BinaryTree(val=5)
+tree.right = BinaryTree(val=8)
+tree.left.left = BinaryTree(val=3)
+tree.left.right = BinaryTree(val=6)
+tree.left.right.left = BinaryTree(val=7)
+tree.left.right.right = BinaryTree(val=9)
+tree.right.left = BinaryTree(val=13)
+tree.right.right = BinaryTree(val=17)
 
 #o(n), I believe
 def dfs(t):

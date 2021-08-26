@@ -1,24 +1,4 @@
-class BinaryTree():
-    def __init__(self, val = None, right = None, left = None, parent = None):
-        self.val = val
-        self.right = right
-        self.left = left
-        self.parent = parent
-
-def inorder(n):
-    if not n:
-        return 
-    inorder(n.left)
-    print(n.val, end=' ')
-    inorder(n.right)
-
-def preorder(n):
-    if not n:
-        return 
-    print(n.val, end=' ')
-    preorder(n.left)
-    preorder(n.right)
-
+from BinaryTree import BinaryTree, inorder, preorder
 
 A = ['F', 'B', 'A', 'E', 'H', 'C', 'D', 'I', 'G']
 B = ['H', 'B', 'F', 'E', 'A', 'C', 'D', 'G', 'I']

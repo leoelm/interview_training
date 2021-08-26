@@ -1,7 +1,4 @@
-class ListNode:
-    def __init__(self, data=0, next_node = None):
-        self.data = data
-        self.next_node = next_node
+from ListNode import ListNode
 
 def search(node, value):
     if node.data == value:
@@ -21,3 +18,11 @@ def insert(node, value):
 
 def delete(node):
     node.next = node.next.next
+
+def printList(l):
+    while l:
+        if not l.next:
+            print(l.data)  
+            break   
+        print(l.data, '--> ', end='')
+        l = l.next
